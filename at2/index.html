@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário com Imagem</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="/at2/css/estilo.css">
 </head>
 <body>
@@ -15,26 +17,29 @@
             <h1>Register</h1>
             <form id="registrationForm">
                 <div class="form-group">
-                    <label for="username">Username</label>
+                    <label for="username"></label>
                     <input id="username" type="text" placeholder="Username" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email"></label>
                     <input id="email" type="email" placeholder="Email address" required>
                 </div>
+                <hr />
                 <div class="form-group">
-                    <label for="password">Password</label>
+                    <label for="password"></label>
                     <input id="password" type="password" placeholder="Password" required>
                 </div>
                 <div class="form-group">
-                    <label for="confirm-password">Confirm Password</label>
+                    <label for="confirm-password"></label>
                     <input id="confirm-password" type="password" placeholder="Confirm Password" required>
                 </div>
-                <button type="submit" id="register-btn">Cadastrar</button>
+                <button type="submit" id="register-btn">Register</button>
             </form>
+            <a class="link" href="sign-up">Sign in</a>
+            <hr>
             <div class="social-buttons">
-                <button onclick="window.location.href='https://mail.google.com/'">Sign in with Gmail</button>
-                <button onclick="window.location.href='https://www.facebook.com/'">Sign in with Facebook</button>
+                <button onclick="window.location.href='https://mail.google.com/'"> <i class="fa-brands fa-google"></i>        Sign up with Gmail</button>
+                <button onclick="window.location.href='https://www.facebook.com/'"><i class="fa-brands fa-facebook"></i>        Sign up with Facebook</button>
             </div>
         </div>
     </div>

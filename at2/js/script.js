@@ -1,6 +1,6 @@
 const form = document.getElementById('registrationForm');
 const registerBtn = document.getElementById('register-btn');
-let attemptCount = 0; // Contador de tentativas
+let attemptCount = 0; 
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -10,7 +10,7 @@ form.addEventListener('submit', (event) => {
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirm-password').value;
 
-    // Validate form inputs
+    
     if (username.trim() === '' || email.trim() === '' || password.trim() === '' || confirmPassword.trim() === '') {
         alert('Por favor, preencha todos os campos.');
         return;
@@ -26,22 +26,22 @@ form.addEventListener('submit', (event) => {
         return;
     }
 
-    // Incrementar o contador de tentativas
+    
     attemptCount++;
 
-    // Verificar se atingiu o limite de tentativas
+    
     if (attemptCount >= 50) {
-        // Desabilitar campos do formulário e atualizar o texto do botão
+        
         form.querySelectorAll('input').forEach((input) => {
             input.disabled = true;
         });
         registerBtn.textContent = 'Unlocker';
         alert('O formulário foi desbloqueado após 50 tentativas.');
-        attemptCount = 0; // Resetar contador se necessário
+        attemptCount = 0; 
     } else {
         alert(`Tentativa ${attemptCount} registrada.`);
     }
 
-    // Simulate storing user data
-    console.log('Registering user:', { username, email, password });
+    
+    console.log('Usuário registrado:', { username, email, password });
 });

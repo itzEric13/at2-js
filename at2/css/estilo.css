@@ -6,7 +6,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #214bd4;
+    background-image: linear-gradient(to right,rgb(8, 9, 97) , rgb(27, 153, 226));
+ 
 }
 
 .container {
@@ -19,18 +20,18 @@ body {
 }
 
 .image-container {
-    flex: 1; /* Faz a imagem ocupar 1 parte do espaço */
+    flex: 1; 
 }
 
 .image-container img {
-    width: 100%; /* A imagem ocupa 100% da largura do container */
-    height: 100%; /* Mantém a proporção da imagem */
-    border-top-left-radius: 10px; /* Borda arredondada no canto superior esquerdo */
-    border-bottom-left-radius: 10px; /* Borda arredondada no canto inferior esquerdo */
+    width: 100%; 
+    height: 100%; 
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px; 
 }
 
 .form-container {
-    flex: 1.5; /* O formulário ocupa 1.5 partes do espaço */
+    flex: 1.5; 
     padding: 20px;
 }
 
@@ -48,17 +49,17 @@ input {
     width: 90%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 30px;
     
 }
 
 button {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
 }
 .social-buttons {
@@ -68,14 +69,30 @@ button {
 .social-buttons button {
     width: 100%;
     padding: 10px;
-    background-color: #4267B2; /* Cor do Facebook */
+    background-color: #4267B2; 
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
-    margin-top: 10px; /* Espaço entre os botões */
+    margin-top: 10px; 
 }
 
 .social-buttons button:first-child {
-    background-color: #db4437; /* Cor do Gmail */
+    background-color: #db4437; 
+}
+.link{ 
+    text-align: center;
+}
+
+.link {
+    display: block; 
+    text-align: center;
+    margin: 15px 0; 
+    font-weight: bold; 
+    color: #007bff; 
+    text-decoration: none; 
+}
+
+.link:hover {
+    text-decoration: underline; 
 }
